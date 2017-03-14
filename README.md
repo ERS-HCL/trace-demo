@@ -46,3 +46,8 @@ The response will be something like the one mentioned below (where the orderID i
   "checkedOut": true
 }
 ```
+### Screen shots from Zipkin
+![Screenshot 1](http://url/to/img.png)
+![Screenshot 2](http://url/to/img.png)
+![Screenshot 3](http://url/to/img.png)
+
