@@ -47,7 +47,9 @@ The response will be something like the one mentioned below (where the orderID i
 }
 ```
 ### Screen shots from Zipkin
-![Screenshot 1](http://url/to/img.png)
-![Screenshot 2](http://url/to/img.png)
-![Screenshot 3](http://url/to/img.png)
+![Screenshot 1](https://github.com/tsukhu/trace-demo/blob/master/screenshots/zipkin_output_1.PNG)
+
+![Screenshot 2](https://github.com/tsukhu/trace-demo/blob/master/screenshots/zipkin_output_2.PNG)
+
+![Screenshot 3](https://github.com/tsukhu/trace-demo/blob/master/screenshots/zipkin_output_3.PNG)
 
