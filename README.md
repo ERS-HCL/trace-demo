@@ -5,12 +5,21 @@ Spring Cloud Sleuth and Zipkin sample to demonstrate distributed tracing for Mic
 1) Install Zipkin
 See instructions from http://zipkin.io/pages/quickstart
 
+If you are using the default zipkin configuration the admin console will be
+available at http://localhost:9411
+
 2) The application consists of 5 SpringBoot applications 
 
 TraceDemoApplication - Frontend
 CartService - Cart Microservice
 CustomerService - Customer management Microservice
 OrderService - Order Microservice
+
+This is a simulation of a sequence of microservices being called for a cart checkout process
+1) The web application will submit a cart to initiate the checkout via the cartservice POST call
+2) The cart service then initiates a call to the order service to place the order and gets back an order ID
+3) The cart service then makes a subsequent call to the customer service to save the cart
+4) The updated cart is returned with the order id and the cart status 
 
 To run it from the command line execute the following steps on different command prompts
 

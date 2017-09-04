@@ -33,7 +33,7 @@ public class CartService {
 	Tracer tracer;
 	
 	@RequestMapping(method = RequestMethod.POST, value = "/checkout")
-	public ShoppingCart checkoutOrder(@RequestBody ShoppingCart cart) {
+	public ShoppingCart checkoutOrder(@RequestBody ShoppingCart cart) throws InterruptedException {
 		
 		Span newSpan = this.tracer.createSpan("orderCheckout");
 		try {
@@ -53,7 +53,10 @@ public class CartService {
 			cart.setOrderId(orderId);
 			List<MediaType> acceptableMediaTypes = new ArrayList<MediaType>();
 			acceptableMediaTypes.add(MediaType.APPLICATION_JSON_UTF8);
-			
+			// Introduce Sleep
+		/*	newSpan.logEvent("Added delay start");
+			Thread.sleep(500);
+			newSpan.logEvent("Added delay end");*/
 			// Save cart state
 			HttpHeaders headers = new HttpHeaders();
 			headers.setAccept(acceptableMediaTypes);
