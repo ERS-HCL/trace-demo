@@ -3,9 +3,9 @@ Spring Cloud Sleuth and Zipkin sample to demonstrate distributed tracing for Mic
 
 ## Startup Steps
 1) Install Zipkin
-See instructions from http://zipkin.io/pages/quickstart
+* See instructions from http://zipkin.io/pages/quickstart
 
-If you are using the default zipkin configuration the admin console will be
+* If you are using the default zipkin configuration the admin console will be
 available at http://localhost:9411
 
 2) The application consists of 4 SpringBoot applications 
