@@ -8,12 +8,12 @@ See instructions from http://zipkin.io/pages/quickstart
 If you are using the default zipkin configuration the admin console will be
 available at http://localhost:9411
 
-2) The application consists of 5 SpringBoot applications 
+2) The application consists of 4 SpringBoot applications 
 
-TraceDemoApplication - Frontend
-CartService - Cart Microservice
-CustomerService - Customer management Microservice
-OrderService - Order Microservice
+* TraceDemoApplication - Frontend
+* CartService - Cart Microservice
+* CustomerService - Customer management Microservice
+* OrderService - Order Microservice
 
 This is a simulation of a sequence of microservices being called for a cart checkout process
 1) The web application will submit a cart to initiate the checkout via the cartservice POST call
